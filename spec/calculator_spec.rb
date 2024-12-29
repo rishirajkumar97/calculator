@@ -27,5 +27,10 @@ RSpec.describe Calculator do
       calculator = Calculator.new
       expect(calculator.add("1\n2,3")).to eq(6)
     end
+
+    it 'supports different delimiters' do
+      calculator = Calculator.new
+      expect(calculator.add("//;\n1;2;4;6")).to eq(13)
+    end
   end
 end

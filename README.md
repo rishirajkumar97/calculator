@@ -18,7 +18,7 @@ A simple string-based calculator built using **Ruby** with **TDD practices**. Th
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rishirajkumar97/calculator.git
    cd calculator
 2. Install dependencies:
     ``` bash

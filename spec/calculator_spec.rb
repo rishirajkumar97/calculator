@@ -32,5 +32,10 @@ RSpec.describe Calculator do
       calculator = Calculator.new
       expect(calculator.add("//;\n1;2;4;6")).to eq(13)
     end
+
+    it 'raises an exception for negative numbers' do
+      calculator = Calculator.new
+      expect { calculator.add("1,-2,3,-4") }.to raise_error("Negative numbers not allowed: -2, -4")
+    end
   end
 end

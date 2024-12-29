@@ -22,5 +22,10 @@ RSpec.describe Calculator do
       calculator = Calculator.new
       expect(calculator.add("1,2,10,20")).to eq(33)
     end
+
+    it 'handles new lines and commas between numbers' do
+      calculator = Calculator.new
+      expect(calculator.add("1\n2,3")).to eq(6)
+    end
   end
 end

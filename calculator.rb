@@ -1,4 +1,6 @@
-# lib/string_calculator.rb
+# frozen_string_literal: true
+
+# calculator.rb
 class Calculator
   def add(numbers)
     return 0 if numbers.empty? # For Base case if the string is empty
@@ -12,7 +14,7 @@ class Calculator
 
     # Using Map function and .to_i to change it to a integer list and perfom summation on the same
     num_list = numbers.split(delimiter).map(&:to_i)
-    puts(delimiter)
+
     negatives = num_list.select(&:negative?)
 
     raise "Negative numbers not allowed: #{negatives.join(', ')}" unless negatives.empty?
@@ -23,7 +25,7 @@ class Calculator
   private
 
   def parse_delimiters(delimiter_section)
-    if delimiter_section.start_with?("[") && delimiter_section.end_with?("]")
+    if delimiter_section.start_with?('[') && delimiter_section.end_with?(']')
       # Extract each delimiter enclosed in square brackets
       delimiters = delimiter_section.scan(/\[([^\]]+)\]/).flatten
       # Escape special characters and combine into a single regex

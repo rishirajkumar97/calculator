@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 # spec/string_calculator_spec.rb
 require './calculator'
-
+# rubocop:disable Metrics/BlockLength
 RSpec.describe Calculator do
   describe '#add' do
     it 'returns 0 for an empty string' do
@@ -54,3 +56,4 @@ RSpec.describe Calculator do
     end
   end
 end
+# rubocop:enable Metrics/BlockLength

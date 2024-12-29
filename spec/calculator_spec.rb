@@ -17,5 +17,10 @@ RSpec.describe Calculator do
       calculator = Calculator.new
       expect(calculator.add("1,2")).to eq(3)
     end
+
+    it 'returns the sum of two numbers' do
+      calculator = Calculator.new
+      expect(calculator.add("1,2,10,20")).to eq(33)
+    end
   end
 end

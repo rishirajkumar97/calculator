@@ -24,15 +24,15 @@ A simple string-based calculator built using **Ruby** with **TDD practices**. Th
     ``` bash
         bundle install
 3. Run tests to ensure everything is set up correctly:
-``` bash
-    bundle exec rspec
+    ``` bash
+        bundle exec rspec
 
 ## Usage
 
 ### Run the Calculator
 
 1. Navigate to the project directory:
-   ```bash
+   ``` bash
    cd calculator
 2. Use the calculator.rb file to perform calculations. For example:
 

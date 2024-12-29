@@ -34,7 +34,10 @@ A simple string-based calculator built using **Ruby** with **TDD practices**. Th
 1. Navigate to the project directory:
    ``` bash
    cd calculator
-2. Use the calculator.rb file to perform calculations. For example:
+2. Start the IRB Terminal using the command
+    ``` bash
+    irb
+3. Use the calculator.rb file to perform calculations. For example:
 
 ``` ruby
 require './calculator'
